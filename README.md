@@ -16,3 +16,13 @@ Sample clients: anita@example.com / karthik@example.com, password `Client@1234` 
 ## Notes
 Tax/discount rates are configurable settings for demonstration and do not make invoices tax-compliant. Payment methods are only recorded; no gateway is integrated.
 Stock is decremented atomically on the server (conditional update, rolled back on failure); repeated requests with the same `requestId` return the original invoice.
+
+
+
+**Showroom360 – Full-Stack Showroom Management System**
+
+**Tech Stack:** React.js, Vite, Tailwind CSS, Node.js, Express.js, MongoDB, Mongoose, JWT, REST APIs, Git & GitHub.
+
+- Developed a full-stack showroom management application with inventory tracking, customer management, billing, and sales dashboards.
+- Implemented backend APIs and database integration for managing products, customers, and sales transactions.
+- Built a responsive user interface with role-based access and authentication.
