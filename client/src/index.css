@@ -1,0 +1,12 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+body { @apply bg-slate-100 text-ink text-[15px]; font-family: 'Times New Roman','Liberation Serif',serif; }
+h1,h2,h3,th { @apply font-bold; }
+@layer components {
+  .card { @apply bg-white border border-slate-300 rounded p-4; }
+  .btn { @apply inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-brand text-white text-sm font-bold hover:bg-ink disabled:opacity-50; }
+  .btn-o { @apply inline-flex items-center gap-1.5 px-3 py-1.5 rounded border border-slate-400 bg-white text-sm font-bold hover:bg-slate-50; }
+  .input { @apply w-full border border-slate-400 rounded px-2.5 py-1.5 bg-white focus:outline-none focus:border-brand; }
+  .th { @apply text-left px-3 py-2 bg-slate-100 border-b border-slate-300 text-sm; }
+  .td { @apply px-3 py-2 border-b border-slate-200; }
+}
+@media print { .noprint { display: none !important; } body { background: #fff; } .card { border: 0; } }
